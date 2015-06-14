@@ -15,14 +15,14 @@
    <div class="container ">
     <div class="nav-wrapper anvilMenu">
       <a href="#!" class="brand-logo"><img src="/img/headerLogo_color.gif" alt="Anvilation" class="logoFix"></a>
-      <a href="#" data-activates="mobileMenu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <a href="#" data-activates="mobileMenu" class="button-collapse"><i class="mdi-navigation-menu anvilMenu"></i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#projects"><i class="fa fa-github"></i> </a></li>
         <li><a href="#about"><i class="fa fa-question"></i></a></li>
         <!--li><a href="#"><i class="fa fa-comment"></i></a></li-->
       </ul>
       <ul class="side-nav" id="mobileMenu">
-        <li><a href="#projects"><i class="fa fa-github"></i> Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <!--li><a href="#">Contact</a></li-->
       </ul>
@@ -34,6 +34,7 @@
 <div class="parallax-container">
     <div class="parallax"><img src="/img/WP_20140506_001.jpg"></div>
   </div>
+  
   <div class="section white">
     <div class="row container">
       <h2 id="projects" class="header center-align"><i class="fa fa-github"></i> Projects</h2>
@@ -51,9 +52,10 @@
   <div class="parallax-container">
     <div class="parallax"><img src="/img/20150418_154746~2.jpg"></div>
   </div> 
+  <a ></a>
   <div class="section white">
     <div class="row container">
-      <h2 id="about" class="header center-align"><i class="fa fa-question"></i> About</h2>
+      <h2 id="about" class="header center-align"> About</h2>
       <p class="flow-text">Anvilation has the services to assist your business in through out the lifecycle of your Enterprise Information Management solution.</p>
       <div class="divider"></div>
       <div class="row">
@@ -118,10 +120,24 @@ Get the most from your investment with our range of Workflow and Web Report cust
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.min.js"></script>
 	<script>
-		 $(".button-collapse").sideNav();
+		$(".button-collapse").sideNav();
 		$(document).ready(function(){
-      $('.parallax').parallax();
+			$('.parallax').parallax();
+			$('a[href^="#"]').on('click', function(event){
+				var target = $($(this).attr('href'));
+				if(target.length){
+					event.preventDefault();
+					$('body').animate({
+						scrollTop: target.offset().top
+					}, 1000)
+					
+				}
+				
+			});
+		
+		
     });
+
 	</script>
 </body>
 </html>
