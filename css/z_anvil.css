@@ -15,3 +15,7 @@ h2:before {
   height: 285px; 
   visibility: hidden; 
 }
+
+footer {
+  background-color: #ccc;
+}

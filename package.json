@@ -1,0 +1,22 @@
+{
+  "name": "anvilation.github.io",
+  "version": "1.0.0",
+  "description": "Anvilation Git Hub Page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anvilation/anvilation.github.io.git"
+  },
+  "author": "Matthew Barben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anvilation/anvilation.github.io/issues"
+  },
+  "homepage": "https://github.com/anvilation/anvilation.github.io",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}

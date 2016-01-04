@@ -1,143 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Anvilation Git Hub</title>
-	<link rel="stylesheet" href="/css/materialize.min.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/z_anvil.css">
-	<meta name="viewport" content="width-device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    </head>
-</head>
-<body>
- <div class="navbar-fixed">
-  <nav class="white">
-   <div class="container ">
-    <div class="nav-wrapper anvilMenu">
-      <a href="#!" class="brand-logo"><img src="/img/headerLogo_color.gif" alt="Anvilation" class="logoFix"></a>
-      <a href="#" data-activates="mobileMenu" class="button-collapse"><i class="mdi-navigation-menu anvilMenu"></i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#projects"><i class="fa fa-github"></i> </a></li>
-        <li><a href="#about"><i class="fa fa-question"></i></a></li>
-        <!--li><a href="#"><i class="fa fa-comment"></i></a></li-->
-      </ul>
-      <ul class="side-nav" id="mobileMenu">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <!--li><a href="#">Contact</a></li-->
-      </ul>
-    </div>
-    </div>
-  </nav>
-  </div>
-  
-<div class="parallax-container">
-    <div class="parallax"><img src="/img/WP_20140506_001.jpg"></div>
-  </div>
-  
-  <div class="section white">
-    <div class="row container">
-      <h2 id="projects" class="header center-align"><i class="fa fa-github"></i> Projects</h2>
-      <p class="flow-text">
-      		Below are the list of projects that are available at this time.
-      	
-      </p>
-        <div class="divider"></div>
-  <div class="section">
-    <p>There are no projects publically available at this time</p>
-  </div>
-
-    </div>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="/img/20150418_154746~2.jpg"></div>
-  </div> 
-  <a ></a>
-  <div class="section white">
-    <div class="row container">
-      <h2 id="about" class="header center-align"> About</h2>
-      <p class="flow-text">Anvilation has the services to assist your business in through out the lifecycle of your Enterprise Information Management solution.</p>
-      <div class="divider"></div>
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title"><i class="fa fa-rocket"></i> Design and Implementation</span>
-              <p>With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.</p>
-            </div>
-
-          </div>
-        </div>
-<div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title"><i class="fa fa-bolt"></i> Extend your Investment</span>
-              <p>
-Get the most from your investment with our range of Workflow and Web Report customisation services.</p>
-            </div>
-
-          </div>
-        </div>        
-		        
-                
-      </div> 
-      <div class="row">
-        
-		<div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title"><i class="fa fa-cogs"></i> ERP Integration</span>
-              <p>With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.</p>
-            </div>
-
-          </div>
-        </div>        
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title"><i class="fa fa-check-circle"></i> Support</span>
-              <p>Keep the lights on and ensure that your investment performs at its best with our support services.</p>
-            </div>
-
-          </div>
-        </div>        
-      </div>              
-        <div class="divider"></div>
-      
-      	
-      </div>      
-
-    </div>
-  
-<!--div class="section white">
-    <div class="row container">
-      <h2 class="header  center-align"><i class="fa fa-comment"></i> Contact</h2>
-      <p class="flow-text">With more than 8 years supporting, implementation and consulting using Open Text ECM suite with a knowledge of the OpenText eco-system including:</p>
-
-    </div>
-  </div -->     
-  
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script>
-		$(".button-collapse").sideNav();
-		$(document).ready(function(){
-			$('.parallax').parallax();
-			$('a[href^="#"]').on('click', function(event){
-				var target = $($(this).attr('href'));
-				if(target.length){
-					event.preventDefault();
-					$('body').animate({
-						scrollTop: target.offset().top
-					}, 1000)
-					
-				}
+	<head>
+		<meta charset="UTF-8">
+		<title>Anvilation Git Hub</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+		<link rel="stylesheet" href="/css/z_anvil.css">
+	</head>
+	</head>
+	<body layout="row" ng-app="app"  ng-cloak>
+		<div ng-app="app"  layout="column" layout-fill>
+			<header>
+				<div ng-controller="MenuCtrl">
+					<md-toolbar>
+						<div class="md-toolbar-tools">
+							<span>
+								<md-icon md-svg-src="/img/anvilation_logo.svg" aria-label="Anvilation" style="margin-top:60px;width:110px;height:110px;"></md-icon>
+							</span>
+							<!-- fill up the space between left and right area -->
+							<span flex></span>
+							<md-button>
+								<md-icon class="fa fa-github fa-2x"> </md-icon>
+							</md-button>
+							<md-button>
+								<md-icon class="fa fa-question fa-2x"> </md-icon>
+							</md-button>
+						</div>
+					</md-toolbar>
+				</div>
+			</header>
+			<main>
+				<md-content>
+					<div layout-gt-sm="row" layout="column" layout-margin layout-align="start" layout-align-gt-sm="start start">
+						<main flex-md="60" flex-order-gt-sm="2">
+							<h1 id="projects" class="header md-display-3"><i class="fa fa-github"></i> Projects</h1>
+							<p>
+								Below are the list of projects that are available at this time.
+							</p>
+							<div layout="row" >
+								<div flex>
+									<md-card>
+										<md-card-title>
+											<md-card-title-text>
+												<span class="md-headline">
+													<md-icon md-svg-src="/img/anvilation_logo.svg" aria-label="Anvilation" style="width:50px;height:50px;"></md-icon>
+													anvilation.github.io
+												</span>
+											</md-card-title-text>
+										</md-card-title>
+										<md-card-content>
+											<p>This page! Build using Angular 1.4 and utilising the diirectives coming out of the <a href="https://material.angularjs.org" target="_blank">Angular Material </a></p>
+										</md-card-content>
+										<md-card-actions layout="row" layout-align="end center">
+											<md-button>Learn More</md-button>
+										</md-card-actions>
+									</md-card>
+								</div>
+								<div flex>
+									<md-card>
+										<md-card-title>
+											<md-card-title-text>
+												<span class="md-headline">
+													<md-icon class="fa fa-github fa-1x"> </md-icon>
+													Content Server Upload
+												</span>
+											</md-card-title-text>
+										</md-card-title>
+										<md-card-content>
+											<p>A simple application detailing how to upload a document to OpenText using Content Server</p>
+										</md-card-content>
+										<md-card-actions layout="row" layout-align="end center">
+											<md-button>Learn More</md-button>
+										</md-card-actions>
+									</md-card>
+								</div>
+								<div flex>
+									<md-card>
+										<md-card-title>
+											<md-card-title-text>
+												<span class="md-headline">
+													<md-icon md-svg-src="/img/piggles_logo.svg" aria-label="Anvilation" style="width:50px;height:50px;"></md-icon>
+													Piggles
+												</span>
+											</md-card-title-text>
+										</md-card-title>
+										<md-card-content>
+											<p>A playpen for development ideas, and my first attempt at creating a MEAN application. Current running on the following:
+											<ul>
+												<li>Node 5</li>
+												<li>Express 4</li>
+												<li>Stormpath</li>
+												<li>Jade</li>
+												<li>Mongoose</li>
+											</ul>
+											</p>
+										</md-card-content>
+										<md-card-actions layout="row" layout-align="end center">
+											<md-button>Learn More</md-button>
+										</md-card-actions>
+									</md-card>
+								</div>
+							</div>
+						</main>
+						<aside flex-md="40" flex-order-gt-sm="1">
+						</aside>
+					</div>
+					<div layout-gt-sm="row" layout="column" layout-margin layout-align="start center" layout-align-gt-sm="start">
+						<main flex-md="60" flex-order-gt-sm="2">
+							<h1 class="header md-display-3">
+								<i class="fa fa-question"></i> About
+							</h1>
+							<p>
+								Anvilation has the services to assist your business in through out the lifecycle of your Enterprise Information Management solution.
+							</p>
+							<div layout="row" >
+								<div flex>
+									<md-card>
+										<md-card-title>
+											<md-card-title-text>
+												<span class="md-headline"><i class="fa fa-rocket"></i> Design and Implementation</span>
+											</md-card-title-text>
+										</md-card-title>
+										<md-card-content>
+											<p>With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.</p>
+										</md-card-content>
+										<md-card-actions layout="row" layout-align="end center">
+											<md-button>Learn More</md-button>
+										</md-card-actions>
+									</md-card>
+								</div>
+								<div flex>
+									<md-card>
+										<md-card-title>
+											<md-card-title-text>
+												<span class="md-headline"><i class="fa fa-bolt"></i> Extend your Investment</span>
+											</md-card-title-text>
+										</md-card-title>
+										<md-card-content>
+											<p>Get the most from your investment. Anvilation specialises in:
+											<ul>
+												<li>Customised Workflows</li>
+												<li>WebReports</li>
+												<li>Custom Intergations via RESTful API</li>
+											</ul>
+											</p>
+										</md-card-content>
+										<md-card-actions layout="row" layout-align="end center">
+											<md-button>Learn More</md-button>
+										</md-card-actions>
+									</md-card>
+								</div>
+								<div flex>
+									<md-card>
+										<md-card-title>
+											<md-card-title-text>
+												<span class="md-headline"><i class="fa fa-cogs"></i> ERP Integration</span>
+											</md-card-title-text>
+										</md-card-title>
+										<md-card-content>
+											<p>With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.</p>
+										</md-card-content>
+										<md-card-actions layout="row" layout-align="end center">
+											<md-button>Learn More</md-button>
+										</md-card-actions>
+									</md-card>
+								</div>
+								<div flex>
+									<md-card>
+										<md-card-title>
+											<md-card-title-text>
+												<span class="md-headline"><i class="fa fa-check-circle"></i> Support</span>
+											</md-card-title-text>
+										</md-card-title>
+										<md-card-content>
+											<p>Keep the lights on and ensure that your investment performs at its best with our support services.</p>
+										</md-card-content>
+										<md-card-actions layout="row" layout-align="end center">
+											<md-button>Learn More</md-button>
+										</md-card-actions>
+									</md-card>
+								</div>
+							</div>
+						</main>
+					</div>
+				</md-content>
+		
+		</main>
+		<footer>
+			<div layout="row" layout-align="">
+				<div >
 				
-			});
-		
-		
-    });
+							
+					<md-button>
+			        <span> Anvilation </span>
+					</md-button>
+			        <md-button>
+								<md-icon class="fa fa-envelope fa-2x"> </md-icon>
+							</md-button>
+							<md-button>
+								<md-icon class="fa fa-google-plus fa-2x"> </md-icon>
+							</md-button>
+							<md-button>
+								<md-icon class="fa fa-twitter fa-2x"> </md-icon>
+							</md-button>
+				
+				</div>
+			
+							
+				
+				
+			
+			             	
+			              <!--li><a href="//plus.google.com/u/0/108861127451259405030?prsrc=3"
+			rel="publisher" target="_top" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
+			<span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:0px;">Anvilation</span><span style="display:inline-block;vertical-align:top;margin-right:13px; margin-top:0px;">on</span>
+			<img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
+			</a></li-->
+			              <!--li><a href="https://twitter.com/anvilation" class="twitter-follow-button" data-show-count="false">Follow @anvilation</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li-->
+			              
+			            
+				</div>				
+				
+			</div>
+		</footer>
+		</div>
+		<!--div ng-controller="MenuCtrl">
+			<md-content>
+				<md-toolbar>
+					<div class="md-toolbar-tools">
+						<md-button class="md-icon-button" aria-label="Settings">
+							<md-icon md-svg-icon="img/anvilation_logo.svg"></md-icon>
+						</md-button>
+						<h2>
+							<span></span>
+						</h2>
+						<span flex=""></span>
+						<md-button class="md-raised" aria-label="Projects">
+							<a href="#about"><i class="fa fa-github"></i></a>
+							<md-icon class="fa fa-github"></md-icon>
+						</md-button>
+						<md-button class="md-fab md-mini" aria-label="About">
+							<a href="#about"><i class="fa fa-question"></i></a>
+						</md-button>
+					</div>
+				</md-toolbar>
+			</md-content>
+			</div-->
+		<!-- div class="navbar-fixed">
+			<nav class="white">
+			 <div class="container ">
+			  <div class="nav-wrapper anvilMenu">
+			    <a href="#!" class="brand-logo"><img src="/img/headerLogo_color.gif" alt="Anvilation" class="logoFix"></a>
+			    <a href="#" data-activates="mobileMenu" class="button-collapse"><i class="mdi-navigation-menu anvilMenu"></i></a>
+			    <ul class="right hide-on-med-and-down">
+			      <li><a href="#projects"><i class="fa fa-github"></i> </a></li>
+			      <li><a href="#about"><i class="fa fa-question"></i></a></li>
+			
+			    </ul>
+			    <ul class="side-nav" id="mobileMenu">
+			      <li><a href="#projects">Projects</a></li>
+			      <li><a href="#about">About</a></li>
+			
+			    </ul>
+			  </div>
+			  </div>
+			</nav>
+			</div -->
+		<!-- div class="parallax-container">
+			<div class="parallax"><img src="/img/WP_20140506_001.jpg"></div>
+			</div>
+			
+			<div class="section white">
+			<div class="row container">
+			  <h2 id="projects" class="header center-align"><i class="fa fa-github"></i> Projects</h2>
+			  <p class="flow-text">
+			  		Below are the list of projects that are available at this time.
+			  	
+			  </p>
+			    <div class="divider"></div>
+			<div class="section">
+			<p>There are no projects publically available at this time</p>
+			</div>
+			
+			</div>
+			</div>
+			<div class="parallax-container">
+			<div class="parallax"><img src="/img/chips.png"></div>
+			</div>
+			
+			<div class="section white">
+			<div class="row container">
+			  <h2 id="about" class="header center-align"> About</h2>
+			  <p class="flow-text">Anvilation has the services to assist your business in through out the lifecycle of your Enterprise Information Management solution.</p>
+			  <div class="divider"></div>
+			  <div class="row">
+			    <div class="col s12 m6">
+			      <div class="card blue-grey darken-1">
+			        <div class="card-content white-text">
+			          <span class="card-title"><i class="fa fa-rocket"></i> Design and Implementation</span>
+			          <p>With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.</p>
+			        </div>
+			
+			      </div>
+			    </div>
+			<div class="col s12 m6">
+			      <div class="card blue-grey darken-1">
+			        <div class="card-content white-text">
+			          <span class="card-title"><i class="fa fa-bolt"></i> Extend your Investment</span>
+			          <p>
+			Get the most from your investment with our range of Workflow and Web Report customisation services.</p>
+			        </div>
+			
+			      </div>
+			    </div>        
+			      
+			            
+			  </div> 
+			  <div class="row">
+			    
+			<div class="col s12 m6">
+			      <div class="card blue-grey darken-1">
+			        <div class="card-content white-text">
+			          <span class="card-title"><i class="fa fa-cogs"></i> ERP Integration</span>
+			          <p>With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.</p>
+			        </div>
+			
+			      </div>
+			    </div>        
+			    <div class="col s12 m6">
+			      <div class="card blue-grey darken-1">
+			        <div class="card-content white-text">
+			          <span class="card-title"><i class="fa fa-check-circle"></i> Support</span>
+			          <p>Keep the lights on and ensure that your investment performs at its best with our support services.</p>
+			        </div>
+			
+			      </div>
+			    </div>        
+			  </div>              
+			    <div class="divider"></div>
+			  
+			  	
+			  </div>      
+			
+			</div>
+			<footer class="page-footer blue-grey darken-1">
+			      <div class="container">
+			        <div class="row">
+			          <div class="col l6 s12">
+			            <h5 class="white-text">Anvilation Pty Ltd</h5>
+			            <p class="grey-text text-lighten-4">Melbourne, Australia</p>
+			          </div>
+			          <div class="col l4 offset-l2 s12">
+			            <h5 class="white-text">Links</h5>
+			            <ul>
+			             	<li><a href="mailto:github@anvilation.com"><i class="fa fa-envelope"></i></a></li>
+			              <li><a href="//plus.google.com/u/0/108861127451259405030?prsrc=3"
+			rel="publisher" target="_top" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
+			<span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:0px;">Anvilation</span><span style="display:inline-block;vertical-align:top;margin-right:13px; margin-top:0px;">on</span>
+			<img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
+			</a></li>
+			              <li><a href="https://twitter.com/anvilation" class="twitter-follow-button" data-show-count="false">Follow @anvilation</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+			              
+			            </ul>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="footer-copyright blue-grey darken-4">
+			        <div class="container">
+			        © 2015 Anvilation
+			        
+			        </div>
+			      </div>
+			    </footer>    
+			
 
-	</script>
-</body>
+		<!-- Angular Material requires Angular.js Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+		<!-- Angular Material Library -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>	
+		<script src="js/app.js"></script>
+		<!-- script>
+			$(".button-collapse").sideNav();
+			$(document).ready(function(){
+				$('.parallax').parallax();
+				$('a[href^="#"]').on('click', function(event){
+					var target = $($(this).attr('href'));
+					if(target.length){
+						event.preventDefault();
+						$('body').animate({
+							scrollTop: target.offset().top
+						}, 1000)
+						
+					}
+					
+				});
+			
+			
+			  });
+			
+			</script-->
+	</body>
 </html>
