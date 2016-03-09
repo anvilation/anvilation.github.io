@@ -7,7 +7,7 @@ let finalCreateStore = compose(
 )(createStore)
 
 
-export  default function configureStore (initialState = { todos: []}){
+export  default function configureStore (initialState = { projects: [], services: [], contactMethods:[] }){
 	return finalCreateStore(reducer, initialState);
 	
 }

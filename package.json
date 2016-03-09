@@ -1,6 +1,6 @@
 {
   "name": "anvilation.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Anvilation Git Hub Page",
   "main": "index.html",
   "scripts": {
@@ -17,9 +17,6 @@
     "url": "https://github.com/anvilation/anvilation.github.io/issues"
   },
   "homepage": "https://github.com/anvilation/anvilation.github.io",
-  "devDependencies": {
-    "bower": "^1.4.1"
-  },
   "dependencies": {
     "babel-core": "^6.6.0",
     "babel-loader": "^6.2.4",

@@ -6,19 +6,10 @@ import { Provider } from 'react-redux';
 
 
 let initialState = {
-	todos: [{
-		id: 0,
-		completed: false,
-		text: 'Initial todo for demo purposes'
-	}],
-	user: {
-		username: 'kurt',
-		id: 13
-	},
 	projects: [{
 		"id": 100,
 		"Name": "anvilation.github.io",
-		"Desccription": "This page! Build using React and Redux utilising the Bootstrap 4 alpha 2",
+		"Desccription": "This page! Bulid using a combination React, Redux and Bootstrap 4 alpha 2 using WebPack as the build tool",
 		"IconType": "svg",
 		"Icon": "/img/anvilation_logo.svg",
 		"smgImage": "",
