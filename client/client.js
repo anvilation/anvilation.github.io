@@ -38,7 +38,7 @@ let initialState = {
 	services: [{
 		"id": 200,
 		"Name": "Design and Implementation",
-		"Description": "With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond",
+		"Description": "With a technical grounding in the OpenText ECM Suite and with over 10 years experience let Anvilation guide your implementation from inception through to completion and beyond",
 		"IconType": "fa",
 		"Icon": "fa fa-question",
 		"smgImage": "",
@@ -110,7 +110,7 @@ let store = configureStore(initialState);
 
 render(
 	<Provider store={store}>
-	<App />
+		<App />
 	</Provider>,
 	document.getElementById('app')
 );
