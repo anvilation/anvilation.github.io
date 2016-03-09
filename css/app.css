@@ -1,0 +1,49 @@
+@font-face {
+    font-family: ANVIL;
+    src: url("/app/font/QanelasSoftDEMO-ExtraBold.otf") format("opentype");
+}
+@font-face {
+    font-family: ANVIL_light;
+    src: url("/app/font/QanelasSoftDEMO-Medium.otf") format("opentype");
+}
+body {
+	margin-top: 50px;
+}
+
+
+#page {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.projects{
+	background: #DD4798;
+	color: white;
+	font-family: ANVIL;
+}
+.services{
+	background: #13143e;
+	color: white;	
+	font-family: ANVIL;
+	
+}
+
+.ANVILATION {
+	font-family: ANVIL;
+	color: #13143e;	
+}
+
+.panelText {
+	color: #13143e;
+	font-family: ANVIL_light;
+}
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sizeSVG{
+	width: 50px; 
+}

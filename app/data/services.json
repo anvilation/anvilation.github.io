@@ -1,0 +1,41 @@
+[{
+		"id": 0,
+		"Name": "Design and Implementation",
+		"Description": "With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond",
+		"IconType": "fa",
+		"Icon": "fa fa-question",
+		"smgImage": "",
+		"lrgImage": "",
+		"url": "http://anvilation.com/services"
+	}, {
+		"id": 1,
+		"Name": "Extend your Investment",
+		"Description": "Get the most from your investment. Anvilation specialises in:*   Customised Workflows *   WebReports *   Custom Intergations via RESTful API",
+		"IconType": "fa",
+		"Icon": "fa fa-bolt",
+		"smgImage": "",
+		"lrgImage": "",
+		"url": "http://anvilation.com/services"
+	}, {
+		"id": 2,
+		"Name": "ERP Integration",
+		"Description": "With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.",
+		"IconType": "fa",
+		"Icon": "fa fa-cogs",
+		"smgImage": "",
+		"lrgImage": "",
+		"url": "http://anvilation.com/services"
+	}, {
+		"id": 2,
+		"Name": "Support",
+		"Description": "Keep the lights on and ensure that your investment performs at its best with our support services.",
+		"IconType": "fa",
+		"Icon": "fa fa-check-circle",
+		"smgImage": "",
+		"lrgImage": "",
+		"url": "http://anvilation.com/services"
+	}
+
+
+
+]

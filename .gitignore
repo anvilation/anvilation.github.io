@@ -2,4 +2,5 @@ node_modules
 typings
 tsd.json
 .vscode
-.stormpath
+whatIsNext
+index_static.html
