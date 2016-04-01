@@ -1,7 +1,7 @@
 [{
 		"id": 0,
 		"Name": "Design and Implementation",
-		"Description": "With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond",
+		"Description": "Over 10 years experience in the OpenText Content Suite; let Anvilation guide you from inception through to implementation and beyond.",
 		"IconType": "fa",
 		"Icon": "fa fa-question",
 		"smgImage": "",
@@ -10,7 +10,10 @@
 	}, {
 		"id": 1,
 		"Name": "Extend your Investment",
-		"Description": "Get the most from your investment. Anvilation specialises in:*   Customised Workflows *   WebReports *   Custom Intergations via RESTful API",
+		"Description": "Get the most from your investment. Anvilation specialises in:
+  - Customised Workflows
+  - WebReports and ActiveView development
+  - Custom Intergations via RESTful API",
 		"IconType": "fa",
 		"Icon": "fa fa-bolt",
 		"smgImage": "",
