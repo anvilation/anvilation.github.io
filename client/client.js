@@ -38,7 +38,7 @@ let initialState = {
 	services: [{
 		"id": 200,
 		"Name": "Design and Implementation",
-		"Description": "With a technical grounding in the OpenText ECM Suite and with over 10 years experience let Anvilation guide your implementation from inception through to completion and beyond",
+		"Description": "Over 10 years experience in the OpenText Content Suite; let Anvilation guide you from inception through to implementation and beyond.",
 		"IconType": "fa",
 		"Icon": "fa fa-question",
 		"smgImage": "",
@@ -47,7 +47,7 @@ let initialState = {
 	}, {
 		"id": 201,
 		"Name": "Extend your Investment",
-		"Description": "Get the most from your investment. Anvilation specialises in; Customised Workflows, WebReports, Custom Intergations via RESTful API",
+		"Description": "Get the most from your investment with our range of Workflow and Web Report/ActiveView and RESTful API customisation services.",
 		"IconType": "fa",
 		"Icon": "fa fa-bolt",
 		"smgImage": "",
@@ -56,7 +56,7 @@ let initialState = {
 	}, {
 		"id": 202,
 		"Name": "ERP Integration",
-		"Description": "With a technical grounding in the OpenText ECM Suite and with over 8 years experience let Anvilation guide your implementation from inception through to completion and beyond.",
+		"Description": "Deployed SAP, or Oracle .. Great! Bring your structured and unstructured content together, and make the best decision using the best information.",
 		"IconType": "fa",
 		"Icon": "fa fa-cogs",
 		"smgImage": "",
