@@ -8,12 +8,17 @@
 }
 body {
 	margin-top: 50px;
+	height: 100%;
 }
 
 
-#page {
+#app {
 	margin: 0 auto;
 	width: 100%;
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;	
 }
 
 .projects{
