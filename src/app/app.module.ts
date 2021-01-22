@@ -10,6 +10,7 @@ import { ServicesComponent } from './shared/services/services.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './shared/home/home.component';
+import { InlineSVGModule } from 'ng-inline-svg';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './shared/home/home.component';
     BrowserModule,
     FontAwesomeModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    InlineSVGModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

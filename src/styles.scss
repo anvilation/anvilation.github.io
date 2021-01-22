@@ -28,6 +28,7 @@ $footerbackground: #028090;
 
 
 @import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/@creativebulma/bulma-divider/src/sass/index.sass";
 
 .projects {
   background-color: $projects;
@@ -41,6 +42,10 @@ $footerbackground: #028090;
   padding: 3rem 1.5rem 6rem;
 }
 
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
 
 .footer {
     // background-color: #2b3a45;
@@ -55,3 +60,10 @@ $footerbackground: #028090;
   .footer a:hover {
     color: $primary;
   }
+/*
+  .anl-logo svg {
+    width: 1em;
+    padding: 1em;
+  }
+
+  */

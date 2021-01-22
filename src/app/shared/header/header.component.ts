@@ -1,5 +1,4 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { Router } from '@angular/router';
 import { faGithub, faLinkedin, faTwitter, faMediumM } from '@fortawesome/free-brands-svg-icons'
 import { faBolt, faQuestion, faCogs, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
@@ -21,13 +20,10 @@ export class HeaderComponent implements OnInit {
     linkedin: faLinkedin,
     medium: faMediumM
   }
-  currentRoute$: any;
   private element: any;
-  landing: boolean;
 
-
-  constructor(private router: Router, private helper: HelperMethods,    private el: ElementRef) { 
-
+  constructor(private helper: HelperMethods, private el: ElementRef) {
+    this.element = document.body;
   }
 
   ngOnInit(): void {

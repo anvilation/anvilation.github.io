@@ -34,6 +34,7 @@ export class BlogComponent implements OnInit {
         this.feed = res;
         this.feed.items = this.feed.items.filter(i => {
           if (i.categories.length > 0) {
+            
             return i;
           }
         })
