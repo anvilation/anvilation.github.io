@@ -1,0 +1,56 @@
+<header class="section is-fixed-top" id="top">
+    <div class="container">
+      <nav class="navbar ">
+        <div class="navbar-brand">
+          <a class="navbar-item" routerLink="/" >
+            <span class="is-size-3 ANVILATION">
+              <strong>ANVILATION</strong>
+            </span>
+          </a>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navigation"  (click)="showMenu()">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navigation" class="navbar-menu">
+          <div class="navbar-start">
+            <a routerLink="/blog"  class="navbar-item">
+              <span class="navbar-item-name">Blog</span>
+            </a>
+            
+            <a routerLink="/projects" class="navbar-item">
+              <span class="navbar-item-name">Projects</span>
+            </a>
+            
+            <a routerLink="/services"  class="navbar-item">
+              <span class="navbar-item-name">Services</span>
+            </a>
+           
+          </div>
+  
+          <div class="navbar-end">
+            <div class="navbar-item">
+              
+                <a href="https://github.com/anvilation" class="navbar-item is-size-5 ">
+                  <span class="icon ">
+                    <fa-icon [icon]="icons.github" aria-hidden="true" aria-label="logo github"></fa-icon>
+                   
+                  </span>
+                  <span class="is-hidden-desktop">&nbsp;GitHub</span>
+                </a>
+              
+                <a href="https://au.linkedin.com/in/mbarben" class="navbar-item is-size-5 ">
+                  <span class="icon is-hidden-touch">
+                    <fa-icon [icon]="icons.linkedin" aria-hidden="true" aria-label="logo linkedin"></fa-icon>
+                    <span class="is-hidden-desktop">&nbsp;LinkedIn</span>
+                  </span>
+  
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
