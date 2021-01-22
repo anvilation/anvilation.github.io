@@ -1,0 +1,44 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title ANVILATION display-1 is-hidden-touch">
+        Blog
+      </h1>
+      <h1 class="title ANVILATION is-hidden-desktop">
+        Blog
+      </h1>    
+    </div>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-body" *ngIf="feed.items">
+    <div class="container" >
+      <div *ngFor="let item of feed.items">
+        <section class="section">
+          <div class="columns">
+            <div class="column is-8 is-offset-2 ">
+              <div class="content is-medium">
+                <figure class="image is-16by9">
+                  <img [src]="item.thumbnail" [alt]="item.title">
+                </figure>
+                <h2 class="subtitle is-4">{{item.pubDate | date}}</h2>
+                <h1 class="title">{{item.title |titlecase}}</h1>
+                <nav class="level is-mobile">
+                  <div class="level-item has-text-centered">
+                    <div>
+                      <p class="heading"><a [href]="item.link" target="blank">View on Medium</a></p>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+      </div>
+
+    </div>
+   
+  </div>
+  <div class="hero-body" *ngIf="!feed.items"></div>
+</section>
