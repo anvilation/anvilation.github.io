@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: ANVIL;
-    src: url("/assets/font/QanelasSoftDEMO-ExtraBold.otf") format("opentype");
+    src: url("assets/font/QanelasSoftDEMO-ExtraBold.otf") format("opentype");
 }
 @font-face {
     font-family: ANVIL_light;
-    src: url("/assets/font/QanelasSoftDEMO-Medium.otf") format("opentype");
+    src: url("assets/font/QanelasSoftDEMO-Medium.otf") format("opentype");
 }
 
 .ANVILATION {
@@ -15,7 +15,7 @@
 	color: #13143e;	
 }
 
-$family-sans-serif: ANVIL_light;
+// $family-sans-serif: ANVIL_light;
 $primary: #3CC0C6;
 // $link: #272838;
 // $info: #5D536B;
