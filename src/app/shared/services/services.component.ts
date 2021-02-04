@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faPalette, faCogs, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faPalette, faCodeBranch, faCode, faGlasses } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
@@ -8,8 +8,9 @@ import { faPalette, faCogs, faCode } from '@fortawesome/free-solid-svg-icons';
 export class ServicesComponent implements OnInit {
   icons = {
     design: faPalette,
-    integration: faCogs,
-    code: faCode
+    integration: faCodeBranch,
+    code: faCode,
+    businessprocess: faGlasses
   }
   constructor() { }
 
