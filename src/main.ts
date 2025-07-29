@@ -1,12 +1,15 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { createApp } from 'vue'
+import { OhVueIcon, addIcons } from "oh-vue-icons";
+import { CoEnvelopeClosed, BiInstagram, BiLinkedin, BiGithub, BiYoutube, HiSolidMail, FaMediumM } from "oh-vue-icons/icons"
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import App from './App.vue'
+import router from './router'
+import './assets/main.css'
+addIcons(CoEnvelopeClosed, BiInstagram, BiLinkedin, BiGithub, BiYoutube, HiSolidMail, FaMediumM);
 
-if (environment.production) {
-  enableProdMode();
-}
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+const app = createApp(App)
+
+app.use(router)
+app.component("v-icon", OhVueIcon);
+app.mount('#app')

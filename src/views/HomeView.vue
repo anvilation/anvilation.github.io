@@ -1,0 +1,37 @@
+<script setup lang="ts">
+
+</script>
+
+<template>
+    <main class="hero min-h-screen main-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+                <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 70" xml:space="preserve">
+                    <g>
+                        <circle fill="#FFFFFF" stroke="#3CC0C6" stroke-width="5.6" stroke-miterlimit="10" cx="34"
+                            cy="34.7" r="30.5" />
+                        <circle fill="#FFFFFF" stroke="#14143E" stroke-width="5.6" stroke-miterlimit="10" cx="34"
+                            cy="34.8" r="26" />
+                        <circle fill="#14143E" stroke="#FFFFFF" stroke-width="0.4" stroke-miterlimit="10" cx="34"
+                            cy="34.8" r="20.8" />
+                        <g>
+                            <path fill="#FFFFFF" stroke="#14143E" stroke-width="2" stroke-miterlimit="10" d="M51,17.8l-15.7,3.8v7.9
+			C47.5,27.8,51,17.8,51,17.8z" />
+                            <path fill="#FFFFFF" stroke="#14143E" stroke-width="2" stroke-miterlimit="10" d="M34.5,31.1V20.5l-16.7,4.3v5.1
+			c0,0,11.3,4.8,4.8,17v3.2l17.3,3.4v-4.3C39.9,49.2,29.6,40.5,34.5,31.1z" />
+                        </g>
+                    </g>
+                </svg>
+                <h1 class="mb-5 text-5xl font-bold">Hi Im Matthew</h1>
+                <p class="mb-5">
+                    Information Management Consultant, Developer, and part time eater of cheese
+                </p>
+
+            </div>
+        </div>
+    </main>
+</template>
+
+<style lang="css" scoped></style>
