@@ -7,8 +7,9 @@
         <div class="hero-overlay"></div>
         <div class="hero-content text-neutral-content text-center">
             <div class="max-w-md">
-                <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 70" xml:space="preserve">
+                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 70" xml:space="preserve"
+                    class="logoshadow">
                     <g>
                         <circle fill="#FFFFFF" stroke="#3CC0C6" stroke-width="5.6" stroke-miterlimit="10" cx="34"
                             cy="34.7" r="30.5" />
@@ -34,4 +35,9 @@
     </main>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.logoshadow {
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .7));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .7));
+}
+</style>
