@@ -19,7 +19,8 @@ const analyticsConfig = {
 }
 
 const app = createApp(App)
-app.use(VueUmamiPlugin, analyticsConfig);
+app.use(VueUmamiPlugin(analyticsConfig));
+
 app.use(router)
 app.component("v-icon", OhVueIcon);
 app.mount('#app')
