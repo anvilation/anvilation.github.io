@@ -13,7 +13,7 @@ const analyticsConfig = {
     router: router,
     extraDataAttributes: {
         'data-host-url': 'https://anvilation.github.io/',
-        'data-domains': 'anvilation.github.io,https://www.anvilation.com/'
+        'data-domains': 'anvilation.github.io,anvilation.com'
     }
 
 }
